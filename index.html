@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexis OS</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+    }
+    .hero {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+    }
+    .background-image {
+      display: block;
+      margin: 0 auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+    .overlay-text h1 {
+      font-size: 4rem;
+      color: #00ffff;
+    }
+    .overlay-text p {
+      font-size: 1.5rem;
+      color: #66ffcc;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 4rem;
+      gap: 2rem;
+    }
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+    .text-block {
+      max-width: 50%;
+    }
+    img {
+      width: 40%;
+      border-radius: 10px;
+    }
+    .email-section {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .email-section input[type="email"] {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+    }
+    .email-section button {
+      padding: 0.5rem 1rem;
+      background-color: #00ffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      padding: 2rem;
+      text-align: center;
+      color: #ccc;
+    }
+    .investor-link {
+      display: block;
+      margin-top: 1rem;
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <section class="hero">
-    <img src="hero.png" class="background-image" alt="Hero" />
+    <img src="hero.png" class="background-image" alt="Hero">
     <div class="overlay-text">
+      <h1>NEXIS OS</h1>
+      <p>The AI Operating System for Civilization</p>
     </div>
   </section>
 
@@ -18,7 +101,7 @@
       <h2>What is Nexis OS?</h2>
       <p>Nexis OS is a next-generation AI infrastructure platform powering autonomous systems, intelligent agents, and AI-native applications – built for scalability, speed, and sovereignty.</p>
     </div>
-    <img src="radar.png" alt="Target AI" />
+    <img src="radar.png" alt="Target AI">
   </section>
 
   <section class="section reverse">
@@ -26,25 +109,26 @@
       <h2>Why Nexis?</h2>
       <p>We believe civilization-scale problems require civilization-grade systems. Nexis OS provides developers, founders, and enterprises with the backbone to build AI-driven solutions without compromise.</p>
     </div>
-    <img src="dashboard.png" alt="Dashboard" />
+    <img src="dashboard.png" alt="Dashboard">
   </section>
 
   <section class="section">
     <div class="text-block">
       <h2>Join the Mission</h2>
       <p>Interested in collaborating, investing, or integrating Nexis OS into your infrastructure? Reach out or join the waitlist for early access.</p>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <button type="submit">Request Access</button>
-      </form>
+      <div class="email-section">
+        <input type="email" placeholder="Enter your email">
+        <button>Request Access</button>
+      </div>
     </div>
-    <img src="handshake.png" alt="Handshake" />
+    <img src="handshake.png" alt="Handshake">
   </section>
 
   <footer>
-    <p>&copy; 2025 Nexis Infrastructure — Contact: <a href="mailto:grants@nexisinfra.tech">grants@nexisinfra.tech</a></p>
-    <p><a href="https://nexisinfra.tech/invest" target="_blank">Investor Portal</a></p>
+    <p>© 2025 Nexis Infrastructure — Contact: <a href="mailto:grants@nexisinfra.tech">grants@nexisinfra.tech</a></p>
+    <a class="investor-link" href="#">Investor Portal</a>
   </footer>
 </body>
 </html>
+
 
