@@ -154,5 +154,24 @@ footer a {
     font-size: 1.8rem;
   }
 }
+/* Crypto Funding Button */
+.coinbase-button {
+  background-color: #0052ff;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 82, 255, 0.35);
+}
+
+.coinbase-button:hover {
+  background-color: #003ecb;
+  box-shadow: 0 0 25px rgba(0, 82, 255, 0.5);
+}
 
 
